@@ -38,7 +38,7 @@ def iscropped(img, imgc):
             if img[x][y] == imgc[0][0]:
                 check = checkpotential(img, imgc, x, y)
                 if check == True:
-                    return "Top-left coordinates: "+str(x)+","+str(y)
+                    return "Top-left coordinates: "+str(y)+","+str(x)
     return "Image is not cropped from the other"
 
 
@@ -68,7 +68,7 @@ def iscroppedjpg(img, imgc):
             if img[x][y] >= stdvl and img[x][y] <= stdvh:
                 check = checkpotentialjpg(img, imgc, x, y)
                 if check == True:
-                    return "Top-left coordinates: "+str(x)+","+str(y)
+                    return "Top-left coordinates: "+str(y)+","+str(x)
     return "Image is not cropped from the other"
 
 
