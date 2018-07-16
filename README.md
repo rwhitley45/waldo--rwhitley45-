@@ -4,7 +4,11 @@ Repository for Waldo coding exercise
 This repository contains the python program ```iscropped.py``` for the waldo coding exercise. The program uses the external
 image processing library OpenCV which can be installed via pip with the following command:
 
-Example:
+```bash
+pip install opencv-python
+```
+
+Example usage:
 ```bash
 python iscropped.py ./images/image1.ext ./images/image2.ext 
 ```
