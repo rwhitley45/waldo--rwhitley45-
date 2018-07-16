@@ -10,7 +10,7 @@ python iscropped.py ./images/image1.ext ./images/image2.ext
 ```
 
 ### Assumptions:
-- The cropped image is a direct crop from the first image.
+- The cropped image is a direct crop from the larger image.
 - Cropped image is not repated throughout the original image. If so, only the first occurance is
 returned.
 - I tested the program on three image formats (Tiff, JPEG, and PNG). If more lossy image formats are
