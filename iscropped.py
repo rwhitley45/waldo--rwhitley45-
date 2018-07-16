@@ -7,7 +7,7 @@ within the original image:
 
 The module contains the following functions:
 
-    - iscropped -- Scans the larger image row wise until pixel value matches 
+    - iscropped -- Scans the larger image column wise until pixel value matches 
         the first pixel value of the smaller image. If none exists, we return
         that the smaller image is not cropped from the other.
 
@@ -15,7 +15,7 @@ The module contains the following functions:
         determines if the smaller image is cropped from the larger by comparing
         each pixel in the cooresponding sub-image. Returns True if so.
 
-    - iscroppedjpg -- Similar to iscropped, but we say a pixel value mathes if
+    - iscroppedjpg -- Similar to iscropped, but we say a pixel value matches if
         it's within some standard deviation of smaller images pixel value. This
         is due to the lossy format of JPEGs. At standard deviation of 20 is chosen
 
